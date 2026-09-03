@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this site or its structure, please cite it."
+title: "Ontology 360 — a research matrix for the phenomenon of reality"
+type: software
+authors:
+  - family-names: Bourguet
+    given-names: Luis
+    orcid: "https://orcid.org/0000-0002-4673-4486"
+    affiliation: "LabOnt — Centre for Ontology, Università degli Studi di Torino"
+url: "https://ontology360.it"
+repository-code: "https://github.com/computational-ontology/ontology360"
+license: CC-BY-4.0
