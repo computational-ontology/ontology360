@@ -1,10 +1,10 @@
 # ontology360.it
 
-Public website of **Ontology 360** — the research matrix of the Computational Ontology programme: being, knowledge and the register, read in a full circle from circumstance to constitution. Home of the book *La Constitución en la era digital* (Herder, Ópera Académica) and the entry point to its open companion.
+Public website of **Ontology 360** — the research matrix of the Computational Ontology project: being, knowledge and the register, read in a full circle from circumstance to constitution. Home of the book *La Constitución en la era digital* (manuscript in draft, intended for Herder, Ópera Académica; not yet submitted) and the entry point to its open companion.
 
-One programme, three sites: **Matrix** (this site) · **Programme** ([computational-ontology.com](https://computational-ontology.com)) · **Platform** ([constitutionsplus.com](https://constitutionsplus.com)).
+One project, three sites: **Matrix** (this site) · **Project** ([computational-ontology.com](https://computational-ontology.com)) · **Platform** ([constitutionsplus.com](https://constitutionsplus.com)).
 
-Static pages, inline CSS, no JavaScript, no dependencies — the same white-box practice as the programme site. Served by GitHub Pages at `ontology360.it`.
+Static pages, inline CSS, no JavaScript, no dependencies — the same white-box practice as the project site. Served by GitHub Pages at `ontology360.it`.
 
 ## Contents
 
@@ -16,7 +16,7 @@ Static pages, inline CSS, no JavaScript, no dependencies — the same white-box 
 | `book.html` | Chapter map (chapter → link → companion units), three outputs, how to cite |
 | `data.html` | The open companion: artefacts, fused-record schema, licences |
 | `method.html` | Two-layer protocol, rules in force, decision log |
-| `about.html` | Author and affiliations (publications are kept on the programme site) |
+| `about.html` | Author and affiliations (publications are kept on the project site) |
 | `trace/example.html` | A sample trace — illustrative values only |
 | `CNAME`, `.nojekyll`, `robots.txt`, `sitemap.xml`, `favicon.svg`, `404.html` | GitHub Pages plumbing |
 
