@@ -10,7 +10,13 @@
 <meta property="og:description" content="Luis Bourguet — interdisciplinary researcher: constitutional law → social ontology → nationalism studies → computational simulation. LabOnt, Università degli Studi di Torino.">
 <meta property="og:url" content="https://ontology360.it/about.html">
 <meta property="og:type" content="website">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="brand/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="brand/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta property="og:image" content="https://ontology360.it/brand/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://ontology360.it/brand/og-image.png">
 <style>@font-face{font-family:'Familjen Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/FamiljenGrotesk-var.woff2) format('woff2');}
 @font-face{font-family:'Familjen Grotesk';font-style:italic;font-weight:400 700;font-display:swap;src:url(fonts/FamiljenGrotesk-italic-var.woff2) format('woff2');}
 @font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:500 600;font-display:swap;src:url(fonts/CormorantGaramond-italic-var.woff2) format('woff2');}
@@ -350,12 +356,16 @@
   .route-list a span{display:block;grid-column:2;font-size:12.5px;color:var(--mut);}
   .route-list a:hover{background:var(--bg2);}
   @media(max-width:700px){.route-svg{display:none;}.route-list{display:block;}.ringpeak svg text.lbl{display:none;}}
+
+  .brand img{width:28px;height:28px;display:block;}
+  .brand{gap:11px;}
+  .sib{display:inline-block;width:22px;height:22px;vertical-align:-5px;margin-right:8px;}
 </style>
 
 </head>
 <body>
 <header class="nav"><div class="wrap row">
-  <a class="brand" href="index.html"><span class="dot"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><circle cx="12" cy="3.5" r="1.6" fill="#ffffff" stroke="none"></circle><circle cx="20.1" cy="9.4" r="1.6" fill="#ffffff" stroke="none"></circle><circle cx="17" cy="18.9" r="1.6" fill="#ffffff" stroke="none"></circle><circle cx="7" cy="18.9" r="1.6" fill="#ffffff" stroke="none"></circle><circle cx="3.9" cy="9.4" r="1.6" fill="#ffffff" stroke="none"></circle></svg></span><span>Ontology 360</span></a>
+  <a class="brand" href="index.html"><picture><source srcset="brand/ontology360-mark-dark.svg" media="(prefers-color-scheme: dark)"><img src="brand/ontology360-mark-color.svg" alt="" width="28" height="28"></picture><span>Ontology 360</span></a>
   <nav class="navlinks" aria-label="Site"><a href="matrix.html" class="">The matrix</a><a href="framework/index.html" class="">Framework</a><a href="book.html" class="">Book</a><a href="data.html" class="">Data</a><a href="method.html" class="">Method</a><a href="about.html" class="on">About</a></nav>
   <span class="pos" title="Link position in the chain"><span class="linkpos" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span>
   <nav class="switch" aria-label="One project, three sites"><a class="on" href="index.html" title="ontology360.it — the matrix">Matrix</a><a href="https://computational-ontology.com/" title="computational-ontology.com — the project">Project</a><a href="https://constitutionsplus.com/" title="constitutionsplus.com — the platform">Platform</a></nav>
@@ -381,6 +391,7 @@
   <span>© 2026 Luis Bourguet · <a href="https://orcid.org/0000-0002-4673-4486" target="_blank" rel="noopener">ORCID 0000-0002-4673-4486</a> · Content licensed <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · Hosted on GitHub Pages · <a href="https://github.com/computational-ontology/ontology360" target="_blank" rel="noopener">Source</a></span>
   <span class="wbtag">White-box practice — no trackers, no third-party code</span>
 </div>
-<div class="wrap" style="margin-top:10px;"><span class="stamp">Updated 3 September 2026 · build eab32c2 · <a href="https://github.com/computational-ontology/ontology360/commits/main" target="_blank" rel="noopener">history</a> · <a href="ontology360-onepage.pdf">one-page PDF</a></span></div></footer>
+<div class="wrap" style="margin-top:12px;font-size:13.5px;">Part of the Computational Ontology ecosystem · Hub: <a href="https://luisbourguet.com/">Luis Bourguet</a> (luisbourguet.com)</div>
+<div class="wrap" style="margin-top:6px;"><span class="stamp">Updated 3 September 2026 · build eab32c2 · <a href="https://github.com/computational-ontology/ontology360/commits/main" target="_blank" rel="noopener">history</a> · <a href="ontology360-onepage.pdf">one-page PDF</a></span></div></footer>
 </body>
 </html>

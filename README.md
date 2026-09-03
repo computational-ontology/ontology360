@@ -19,6 +19,7 @@ Static pages, inline CSS, self-hosted fonts (`fonts/`, OFL), no third-party code
 | `about.html` | Author and affiliations (publications are kept on the project site) |
 | `trace/example.html` | A sample trace — illustrative values only |
 | `fonts/` | Familjen Grotesk and Cormorant Garamond (variable woff2, SIL OFL) |
+| `brand/` | Logo family v2 (marks light/dark, sibling marks, favicons, OG image) · `site.webmanifest` |
 | `ontology360-onepage.pdf` | One-page summary: the chain and the deposited objects |
 | `CNAME`, `.nojekyll`, `robots.txt`, `sitemap.xml`, `favicon.svg`, `404.html` | GitHub Pages plumbing |
 
