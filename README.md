@@ -4,7 +4,7 @@ Public website of **Ontology 360** — the research matrix of the Computational 
 
 One project, three sites: **Matrix** (this site) · **Project** ([computational-ontology.com](https://computational-ontology.com)) · **Platform** ([constitutionsplus.com](https://constitutionsplus.com)).
 
-Static pages, inline CSS, no JavaScript, no dependencies — the same white-box practice as the project site. Served by GitHub Pages at `ontology360.it`.
+Static pages, inline CSS, self-hosted fonts (`fonts/`, OFL), no third-party code, no trackers — the same white-box practice as the project site. Visual direction “Cartography” (3 Sep 2026): white, hard rules, big type, the chain drawn as a route; the ring is the mid-page peak. Served by GitHub Pages at `ontology360.it`.
 
 ## Contents
 
@@ -18,6 +18,8 @@ Static pages, inline CSS, no JavaScript, no dependencies — the same white-box 
 | `method.html` | Two-layer protocol, rules in force, decision log |
 | `about.html` | Author and affiliations (publications are kept on the project site) |
 | `trace/example.html` | A sample trace — illustrative values only |
+| `fonts/` | Familjen Grotesk and Cormorant Garamond (variable woff2, SIL OFL) |
+| `ontology360-onepage.pdf` | One-page summary: the chain and the deposited objects |
 | `CNAME`, `.nojekyll`, `robots.txt`, `sitemap.xml`, `favicon.svg`, `404.html` | GitHub Pages plumbing |
 
 ## Editing

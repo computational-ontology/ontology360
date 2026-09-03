@@ -3,15 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ontology 360 — A research matrix for the phenomenon of reality</title>
-<meta name="description" content="Ontology 360 is the research matrix of a computational social ontology: being, knowledge and the register, read in a full circle from circumstance to constitution. Home of the book La Constitución en la era digital and its open companion.">
+<title>Ontology 360 — the grammar of how societies register who belongs</title>
+<meta name="description" content="Ontology 360 is the research matrix of the Computational Ontology project: being, knowing and the register, read in a full circle from circumstance to constitution. Home of the book La Constitución en la era digital and its open companion.">
 <link rel="canonical" href="https://ontology360.it/">
-<meta property="og:title" content="Ontology 360 — A research matrix for the phenomenon of reality">
-<meta property="og:description" content="Ontology 360 is the research matrix of a computational social ontology: being, knowledge and the register, read in a full circle from circumstance to constitution. Home of the book La Constitución en la era digital and its open companion.">
+<meta property="og:title" content="Ontology 360 — the grammar of how societies register who belongs">
+<meta property="og:description" content="Ontology 360 is the research matrix of the Computational Ontology project: being, knowing and the register, read in a full circle from circumstance to constitution. Home of the book La Constitución en la era digital and its open companion.">
 <meta property="og:url" content="https://ontology360.it/">
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<style>
+<style>@font-face{font-family:'Familjen Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/FamiljenGrotesk-var.woff2) format('woff2');}
+@font-face{font-family:'Familjen Grotesk';font-style:italic;font-weight:400 700;font-display:swap;src:url(fonts/FamiljenGrotesk-italic-var.woff2) format('woff2');}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:500 600;font-display:swap;src:url(fonts/CormorantGaramond-italic-var.woff2) format('woff2');}
+
   :root{
     --bg:#ffffff; --bg2:#f7f9fb; --panel:#ffffff; --ink:#0f1a24; --ink2:#28323d;
     --mut:#5a6b7b; --line:#e4e9ee; --line2:#eef2f6;
@@ -240,77 +243,212 @@
   .quiet{font-size:13px;color:var(--mut);}
   .hero.sub{padding:56px 0 44px;}
   .hero.sub h1{font-size:clamp(28px,4.2vw,44px);}
+
+  /* ---------- Cartography direction (3 Sep 2026): white, hard rules, big type, the chain as a route ---------- */
+  :root{--rule:#0f1a24; --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;}
+  @media (prefers-color-scheme: dark){:root{--rule:#e8eef4;}}
+  body{font-family:"Familjen Grotesk","Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:0;}
+  h1,h2,h3{letter-spacing:-.03em;}
+  .hero h1{font-size:clamp(40px,7vw,96px);font-weight:700;line-height:.96;letter-spacing:-.045em;max-width:14ch;text-wrap:balance;}
+  .hero.sub h1{font-size:clamp(32px,5vw,60px);}
+  em.k,.k-it{font-family:var(--serif);font-style:italic;font-weight:500;letter-spacing:-.01em;font-size:1.08em;}
+  .hero{background:none;border-bottom:2px solid var(--rule);padding:72px 0 56px;}
+  .hero .slogan{max-width:56ch;}
+  .eyebrow{color:var(--acc-ink);}
+  section{border-bottom:1px solid var(--line);}
+  .sec-head h2{font-weight:700;font-size:clamp(26px,3.6vw,38px);}
+  .card,.op,.band,.dm,.step,.tri,.stage{border-radius:0;box-shadow:none;}
+  .card,.op{border-color:var(--line);}
+  .card:hover,.op:hover{border-color:var(--rule);}
+  .btn,.chip,.aff{border-radius:0;}
+  .btn.primary{background:var(--acc);border-color:var(--acc);}
+  .btn{border:2px solid var(--rule);color:var(--ink);}
+  .btn:hover{transform:none;background:var(--bg2);border-color:var(--rule);color:var(--ink);}
+  .switch{border-radius:0;padding:0;background:var(--panel);border:2px solid var(--rule);gap:0;}
+  .switch a{border-radius:0;padding:5px 11px;border-left:2px solid var(--rule);}
+  .switch a:first-child{border-left:0;}
+  .switch a.on{background:var(--rule);color:var(--bg);}
+  header.nav{border-bottom:2px solid var(--rule);}
+  .brand .dot{border-radius:0;}
+  .navlinks a.on{color:var(--ink);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px;}
+  .hardrule{border-top:2px solid var(--rule);}
+  /* proofs strip (above the fold, three verifiable things + updated) */
+  .proofs{display:flex;flex-wrap:wrap;gap:0;border:2px solid var(--rule);margin-top:26px;}
+  .proofs>a,.proofs>span{flex:1 1 180px;padding:12px 16px;border-left:2px solid var(--rule);font-size:13.5px;color:var(--ink);display:flex;flex-direction:column;gap:2px;}
+  .proofs>a:first-child,.proofs>span:first-child{border-left:0;}
+  .proofs a:hover{background:var(--bg2);text-decoration:none;}
+  .proofs .pk{font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);}
+  .proofs .pv{font-weight:600;}
+  @media(max-width:700px){.proofs>a,.proofs>span{flex:1 1 100%;border-left:0;border-top:2px solid var(--rule);}.proofs>a:first-child,.proofs>span:first-child{border-top:0;}}
+  /* audience routes (Hick's law; no JS: native <details>) */
+  .routes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border:2px solid var(--rule);}
+  @media(max-width:900px){.routes{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.routes{grid-template-columns:1fr;}}
+  .routes details{border-left:2px solid var(--rule);}
+  .routes details:first-child{border-left:0;}
+  @media(max-width:900px){.routes details{border-left:0;border-top:2px solid var(--rule);}.routes details:first-child{border-top:0;}}
+  .routes summary{list-style:none;cursor:pointer;padding:16px 18px;font-weight:700;font-size:15px;display:flex;justify-content:space-between;align-items:center;gap:10px;}
+  .routes summary::-webkit-details-marker{display:none;}
+  .routes summary::after{content:"+";font-weight:400;color:var(--mut);font-size:18px;}
+  .routes details[open] summary::after{content:"−";}
+  .routes details[open]{background:var(--bg2);}
+  .routes summary>span{display:flex;flex-direction:column;gap:2px;}
+  .routes summary small{font-weight:400;color:var(--mut);font-size:12.5px;}
+  .routes ol{margin:0;padding:0 18px 18px 36px;font-size:14px;color:var(--ink2);}
+  .routes li{margin:6px 0;}
+  /* the route (chain as a map) */
+  .route-svg{width:100%;height:auto;display:block;}
+  .route-path{stroke-dasharray:1600;stroke-dashoffset:1600;animation:travel 2.6s cubic-bezier(.3,.7,.2,1) .2s forwards;}
+  @keyframes travel{to{stroke-dashoffset:0;}}
+  .station{transition:transform .2s ease;transform-box:fill-box;transform-origin:center;}
+  a:hover .station{transform:scale(1.4);}
+  .route-svg a{text-decoration:none;}
+  .route-svg a:hover text{fill:var(--acc-ink);}
+  /* the ring (Atlas peak) */
+  .ringpeak{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:center;}
+  @media(max-width:900px){.ringpeak{grid-template-columns:1fr;}}
+  .ringpeak svg{width:100%;height:auto;max-width:640px;display:block;margin:0 auto;}
+  .ring-draw{stroke-dasharray:1300;stroke-dashoffset:1300;animation:ringdraw 2.4s cubic-bezier(.2,.7,.2,1) .1s forwards;}
+  @keyframes ringdraw{to{stroke-dashoffset:0;}}
+  .ring-spin{transform-origin:50% 50%;animation:spin 120s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .pin{transition:transform .2s ease;transform-box:fill-box;transform-origin:center;}
+  .ringpeak a:hover .pin{transform:scale(1.35);}
+  .ringpeak a:hover text{fill:var(--acc-ink);}
+  .bridges{display:flex;flex-direction:column;gap:0;border-top:2px solid var(--rule);}
+  .bridge-row{display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;padding:14px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--ink2);}
+  .bridge-row .n{font-weight:700;color:var(--acc-ink);}
+  .bridge-row b{color:var(--ink);}
+  /* section close = invitation */
+  .invite{display:flex;justify-content:flex-end;margin-top:22px;}
+  .invite a{font-weight:700;border-bottom:2px solid var(--rule);padding-bottom:2px;color:var(--ink);}
+  .invite a:hover{color:var(--acc-ink);border-color:var(--acc);text-decoration:none;}
+  /* scroll reveal — progressive; static when unsupported */
+  @supports (animation-timeline: view()){
+    .reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 35%;}
+    @keyframes rise{from{opacity:.15;transform:translateY(18px);}to{opacity:1;transform:none;}}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .route-path,.ring-draw{animation:none;stroke-dashoffset:0;}
+    .ring-spin{animation:none;}
+    .reveal{animation:none;}
+    *{transition:none !important;}
+  }
+  /* footer with update stamp */
+  footer{border-top:2px solid var(--rule);}
+  .stamp{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;color:var(--mut);}
+  details.trace{border:1px solid var(--line);margin-top:10px;}
+  details.trace summary{cursor:pointer;padding:12px 16px;font-weight:600;font-size:14px;}
+  details.trace[open] summary{border-bottom:1px solid var(--line);}
+  details.trace .body{padding:8px 16px 14px;}
+  .bridge-row .ln{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:2px;}
+  .route-list{display:none;list-style:none;margin:0;padding:0;border:2px solid var(--rule);counter-reset:st;}
+  .route-list li{counter-increment:st;border-top:2px solid var(--rule);}
+  .route-list li:first-child{border-top:0;}
+  .route-list a{display:grid;grid-template-columns:34px minmax(0,1fr);gap:10px;padding:12px 14px;color:var(--ink);text-decoration:none;align-items:baseline;}
+  .route-list a::before{content:counter(st);font-weight:700;color:var(--acc-ink);}
+  .route-list a span{display:block;grid-column:2;font-size:12.5px;color:var(--mut);}
+  .route-list a:hover{background:var(--bg2);}
+  @media(max-width:700px){.route-svg{display:none;}.route-list{display:block;}.ringpeak svg text.lbl{display:none;}}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://ontology360.it/#site", "url": "https://ontology360.it/", "name": "Ontology 360", "description": "The research matrix of the Computational Ontology project: being, knowing and the register, read in a full circle from circumstance to constitution.", "inLanguage": "en", "author": {"@id": "https://luisbourguet.com/#person"}, "isPartOf": {"@type": "ResearchProject", "name": "Computational Ontology", "url": "https://computational-ontology.com/"}, "dateModified": "2026-09-03"}, {"@type": "Person", "@id": "https://luisbourguet.com/#person", "name": "Luis Bourguet", "url": "https://luisbourguet.com/", "sameAs": ["https://orcid.org/0000-0002-4673-4486", "https://github.com/computational-ontology", "https://labont.it/people/luis-bourguet/", "https://ontology360.it/", "https://computational-ontology.com/", "https://constitutionsplus.com/"], "affiliation": {"@type": "Organization", "name": "LabOnt — Centre for Ontology, Università degli Studi di Torino", "url": "https://labont.it/"}}, {"@type": "Book", "@id": "https://ontology360.it/book.html#book", "name": "La Constitución en la era digital", "author": {"@id": "https://luisbourguet.com/#person"}, "inLanguage": "es", "creativeWorkStatus": "Draft", "description": "Manuscript in draft, intended for Herder Editorial (Ópera Académica), not yet submitted.", "url": "https://ontology360.it/book.html", "license": "https://creativecommons.org/licenses/by/4.0/"}, {"@type": "Dataset", "@id": "https://data.ontology360.it/#dataset", "name": "Herder companion — ideology × domain × register", "creator": {"@id": "https://luisbourguet.com/#person"}, "url": "https://data.ontology360.it/", "license": "https://creativecommons.org/licenses/by/4.0/", "isAccessibleForFree": true, "distribution": [{"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://github.com/computational-ontology/herder-companion"}]}]}</script>
 </head>
 <body>
 <header class="nav"><div class="wrap row">
   <a class="brand" href="index.html"><span class="dot"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><circle cx="12" cy="3.5" r="1.6" fill="#ffffff" stroke="none"></circle><circle cx="20.1" cy="9.4" r="1.6" fill="#ffffff" stroke="none"></circle><circle cx="17" cy="18.9" r="1.6" fill="#ffffff" stroke="none"></circle><circle cx="7" cy="18.9" r="1.6" fill="#ffffff" stroke="none"></circle><circle cx="3.9" cy="9.4" r="1.6" fill="#ffffff" stroke="none"></circle></svg></span><span>Ontology 360</span></a>
   <nav class="navlinks" aria-label="Site"><a href="matrix.html" class="">The matrix</a><a href="framework/index.html" class="">Framework</a><a href="book.html" class="">Book</a><a href="data.html" class="">Data</a><a href="method.html" class="">Method</a><a href="about.html" class="">About</a></nav>
+  <span class="pos" title="Link position in the chain"><span class="linkpos" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></span></span>
   <nav class="switch" aria-label="One project, three sites"><a class="on" href="index.html" title="ontology360.it — the matrix">Matrix</a><a href="https://computational-ontology.com/" title="computational-ontology.com — the project">Project</a><a href="https://constitutionsplus.com/" title="constitutionsplus.com — the platform">Platform</a></nav>
 </div></header>
 
-<section class="hero"><div class="wrap hero-grid">
-  <div>
-    <p class="eyebrow">Research matrix · computational social ontology</p>
-    <h1>A research matrix for the phenomenon of reality.</h1>
-    <p class="slogan">One grammar — being, knowledge and the register — read in a full circle: from the circumstance no one can amend to the constitution that decides who counts. Every claim on this site can be followed back to the inscription that supports it.</p>
-    <span class="aff"><b>LabOnt</b> — Centre for Ontology · Università degli Studi di Torino</span>
-    <div class="cta"><a class="btn primary" href="matrix.html">Enter the matrix →</a><a class="btn" href="data.html">Reuse the data</a><a class="btn" href="book.html">The book</a></div>
+<section class="hero"><div class="wrap">
+  <p class="eyebrow">Matrix · computational social ontology · link 1–2 of 5</p>
+  <h1>The grammar of how societies <em class="k">register</em> who belongs.</h1>
+  <p class="slogan">Ontology 360 is the research matrix of the Computational Ontology project: being and knowing, the register as the operator of identity and belonging, the four social domains, the constitution as the register of registers. Home of the book <i>La Constitución en la era digital</i> and of its open companion data.</p>
+  <div class="proofs">
+    <a href="https://labont.it/people/luis-bourguet/" target="_blank" rel="noopener"><span class="pk">Institution</span><span class="pv">LabOnt — Centre for Ontology, Università di Torino</span></a>
+    <a href="https://doi.org/10.5281/zenodo.21616892" target="_blank" rel="noopener"><span class="pk">A deposited object</span><span class="pv">SOCE Codebook v0.1 · doi:10.5281/zenodo.21616892</span></a>
+    <a href="book.html"><span class="pk">The book</span><span class="pv">Manuscript in draft · intended for Herder · not yet submitted</span></a>
+    <span><span class="pk">Updated</span><span class="pv">3 September 2026</span></span>
   </div>
-  <div class="ring"><svg width="865" height="539" viewBox="-197 -24 865 539" fill="none" role="img" aria-label="The chain of five links, closed into a circle: circumstance, register, domains and domination, constitutional architecture, normative consequence"><circle cx="235.0" cy="235.0" r="169.2" stroke="var(--line)" stroke-width="10"></circle><circle cx="235.0" cy="235.0" r="169.2" stroke="var(--acc)" stroke-width="3" stroke-dasharray="6 9" opacity=".7"></circle><text x="235.0" y="225.0" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="75" font-weight="800" fill="var(--ink)" letter-spacing="-2">360</text><text x="235.0" y="263" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="var(--mut)" letter-spacing="2">BEING · REGISTER · DOMAINS · CONSTITUTION · NORM</text><circle cx="235.0" cy="65.8" r="23.5" fill="var(--acc)" stroke="var(--acc)" stroke-width="3"></circle><text x="235.0" y="73.8" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="21" font-weight="800" fill="#ffffff">1</text><text x="235.0" y="11.8" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="var(--ink)">Circumstance</text><text x="235.0" y="28.7" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="var(--mut)">being · the in-emendable</text><circle cx="395.9" cy="182.7" r="23.5" fill="var(--acc)" stroke="var(--acc)" stroke-width="3"></circle><text x="395.9" y="190.7" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="21" font-weight="800" fill="#ffffff">2</text><text x="447.3" y="166.0" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="var(--ink)">Register</text><text x="447.3" y="182.9" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="var(--mut)">inscription · identity · belonging</text><circle cx="334.5" cy="371.9" r="23.5" fill="var(--acc)" stroke="var(--acc)" stroke-width="3"></circle><text x="334.5" y="379.9" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="21" font-weight="800" fill="#ffffff">3</text><text x="366.2" y="415.6" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="var(--ink)">Domains · domination</text><text x="366.2" y="432.5" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="var(--mut)">four domains · who controls the inscription</text><circle cx="135.5" cy="371.9" r="23.5" fill="var(--acc)" stroke="var(--acc)" stroke-width="3"></circle><text x="135.5" y="379.9" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="21" font-weight="800" fill="#ffffff">4</text><text x="103.8" y="415.6" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="var(--ink)">Constitutional architecture</text><text x="103.8" y="432.5" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="var(--mut)">the meta-register · CCP</text><circle cx="74.1" cy="182.7" r="23.5" fill="var(--acc)" stroke="var(--acc)" stroke-width="3"></circle><text x="74.1" y="190.7" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="21" font-weight="800" fill="#ffffff">5</text><text x="22.7" y="166.0" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="var(--ink)">Normative consequence</text><text x="22.7" y="182.9" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="var(--mut)">plural constitutionalism</text></svg></div>
+</div></section>
+
+<section id="routes"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">You come as…</p><h2>Four routes, one corpus.</h2><p>The same pages in a different order. Pick the reading that matches why you are here; nothing is duplicated.</p></div>
+  <div class="routes">
+    <details><summary><span>Evaluator<small>deposited objects, maturity, method</small></span></summary><ol><li><a href="https://computational-ontology.com/#open-science">Research objects with DOIs</a> — what exists, on which open road (<a href="ontology360-onepage.pdf">one-page PDF</a>).</li><li><a href="book.html">The book's state</a> — draft, intended for Herder, not submitted; chapter map.</li><li><a href="method.html">Method and governance</a> — two layers, α policy, seven checks.</li></ol></details>
+    <details><summary><span>Colleague<small>the grammar and its operators</small></span></summary><ol><li><a href="matrix.html">The matrix</a> — being / knowing / register × four domains.</li><li><a href="framework/index.html">Eight operators</a> — what each author does in the chain.</li><li><a href="data.html">The companion</a> — fused record, schemas, matrix.</li></ol></details>
+    <details><summary><span>Institution<small>rules, firewall, reuse</small></span></summary><ol><li><a href="method.html#firewall">The interpretive firewall</a> — no technique produces a norm.</li><li><a href="https://constitutionsplus.com/#tiers">The two-tier rule</a> — exploratory vs canonical.</li><li><a href="data.html#licences">Licences and identifiers</a> — CC BY, CCP-compatible ids.</li></ol></details>
+    <details><summary><span>Curious<small>the ring and one story</small></span></summary><ol><li><a href="#ring">The ring</a> — five links, one circle.</li><li><a href="trace/example.html">One claim, followed back</a> — a sample trace.</li><li><a href="book.html">The book</a> — what it argues and why now.</li></ol></details>
+  </div>
 </div></section>
 
 <section id="chain"><div class="wrap">
-  <div class="sec-head"><p class="eyebrow">The chain</p><h2>Five links, one circle</h2><p>Nothing here is asserted from a single discipline. Every important claim runs the whole chain, and every page tells you which link you are standing on.</p></div>
-  <div class="pipe">
-    <div class="step"><div class="n">01 · Being</div><h3>Circumstance</h3><p>What resists amendment: natality, plurality, mortality, the Earth. Arendt, Ortega, Onnis.</p></div>
-    <div class="arrowh">→</div>
-    <div class="step"><div class="n">02 · Register</div><h3>Inscription</h3><p>Object = inscribed act. The signature individuates; the shared inscription makes a “we”. Ferraris.</p></div>
-    <div class="arrowh">→</div>
-    <div class="step"><div class="n">03 · Domains</div><h3>Domination</h3><p>Four domains, one register of belonging each. Domination is control of who is inscribed. Romero.</p></div>
-    <div class="arrowh">→</div>
-    <div class="step"><div class="n">04 · Constitution</div><h3>Meta-register</h3><p>Where belongings are reconciled or imposed. Read on the Comparative Constitutions Project.</p></div>
-    <div class="arrowh">→</div>
-    <div class="step" style="border-color:var(--acc);"><div class="n">05 · Norm</div><h3>Plural constitutionalism</h3><p>The consequence — stated by the author, never generated by a technique.</p></div>
-  </div>
-  <p class="bridge"><b>The fifth link closes on the first:</b> the norm returns to the circumstance it must answer to — that is the 360.</p>
+  <div class="sec-head"><p class="eyebrow">The route</p><h2>Five links, three sites, one direction.</h2><p>Nothing here is asserted from a single discipline. Every important claim travels the whole chain, and every page tells you which link you are standing on. This site covers the first two; the project and the platform take it further.</p></div>
+  <svg class="route-svg" viewBox="-80 0 1490 262" fill="none" role="img" aria-label="The chain as a route: circumstance, register, domains and domination, constitutional architecture, normative consequence; the matrix, the project and the platform placed along it."><path class="route-path" d="M40 150 C 200 60, 330 60, 470 150 S 760 240, 900 150 S 1180 60, 1290 150" stroke="var(--rule)" stroke-width="2.5" stroke-linecap="round"></path><g font-family="Familjen Grotesk,Helvetica,Arial,sans-serif" font-size="13" fill="var(--ink)"><a href="framework/arendt.html"><circle class="station" cx="40" cy="150" r="9" fill="var(--panel)" stroke="var(--rule)" stroke-width="2.5"></circle><text x="40" y="190" text-anchor="middle" font-weight="700">Circumstance</text><text x="40" y="208" text-anchor="middle" fill="var(--mut)" font-size="12">being · the in-emendable</text></a><a href="framework/ferraris.html"><circle class="station" cx="352" cy="87" r="9" fill="var(--panel)" stroke="var(--rule)" stroke-width="2.5"></circle><text x="352" y="59" text-anchor="middle" font-weight="700">Register</text><text x="352" y="41" text-anchor="middle" fill="var(--mut)" font-size="12">inscription · identity · belonging</text><text x="352" y="23" text-anchor="middle" fill="var(--acc-ink)" font-size="11" font-weight="700">MATRIX · this site</text></a><a href="framework/romero.html"><circle class="station" cx="680" cy="196" r="9" fill="var(--panel)" stroke="var(--rule)" stroke-width="2.5"></circle><text x="680" y="236" text-anchor="middle" font-weight="700">Domains · domination</text><text x="680" y="254" text-anchor="middle" fill="var(--mut)" font-size="12">who controls the inscription</text><text x="680" y="272" text-anchor="middle" fill="var(--acc-ink)" font-size="11" font-weight="700">PROJECT · computational-ontology.com</text></a><a href="book.html#map"><circle class="station" cx="1010" cy="100" r="9" fill="var(--panel)" stroke="var(--rule)" stroke-width="2.5"></circle><text x="1010" y="72" text-anchor="middle" font-weight="700">Constitutional architecture</text><text x="1010" y="54" text-anchor="middle" fill="var(--mut)" font-size="12">the meta-register · CCP</text><text x="1010" y="36" text-anchor="middle" fill="var(--acc-ink)" font-size="11" font-weight="700">PLATFORM · constitutionsplus.com</text></a><a href="method.html"><circle class="station" cx="1290" cy="150" r="9" fill="var(--interp)" stroke="var(--rule)" stroke-width="2.5"></circle><text x="1290" y="190" text-anchor="middle" font-weight="700">Consequence</text><text x="1290" y="208" text-anchor="middle" fill="var(--mut)" font-size="12">a human judgement</text></a><circle cx="40" cy="150" r="22" fill="none" stroke="var(--acc)" stroke-width="1" stroke-dasharray="3 4"></circle><text x="40" y="112" text-anchor="middle" fill="var(--acc-ink)" font-size="11" font-weight="700">START HERE</text></g></svg>
+  <ol class="route-list">
+    <li><a href="framework/arendt.html"><b>Circumstance</b> <span>being · the in-emendable</span></a></li>
+    <li><a href="framework/ferraris.html"><b>Register</b> <span>inscription · identity · belonging · <i>Matrix — this site</i></span></a></li>
+    <li><a href="framework/romero.html"><b>Domains · domination</b> <span>who controls the inscription · <i>Project</i></span></a></li>
+    <li><a href="book.html#map"><b>Constitutional architecture</b> <span>the meta-register · CCP · <i>Platform</i></span></a></li>
+    <li><a href="method.html"><b>Consequence</b> <span>a human judgement</span></a></li>
+  </ol>
+  <div class="invite"><a href="matrix.html">Start at link 1: the matrix →</a></div>
 </div></section>
 
-<section id="traceability" style="background:var(--bg2);"><div class="wrap">
-  <div class="sec-head"><p class="eyebrow">Traceability</p><h2>How to read anything on this site</h2><p>Three kinds of statement, always marked. The reader never has to guess which is which.</p></div>
+<section id="ring" style="background:var(--bg2);"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">The ring</p><h2>The fifth link closes on the first.</h2><p>The norm returns to the circumstance it must answer to — that is the 360. Hover a link to see it; open it to meet the operator that does the work there.</p></div>
+  <div class="ringpeak">
+    <div><svg viewBox="-120 -14 760 552" fill="none" role="img" aria-label="The chain of five links closed into a ring; each link opens its operator."><g class="ring-spin"><circle cx="260" cy="260" r="188" stroke="var(--line)" stroke-width="1"></circle><circle class="ring-draw" cx="260" cy="260" r="188" stroke="var(--acc)" stroke-width="2.5" stroke-linecap="round"></circle></g><circle cx="260" cy="260" r="120" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 6"></circle><g font-family="Familjen Grotesk,Helvetica,Arial,sans-serif" font-size="16" fill="var(--ink)" font-weight="600"><a href="framework/arendt.html"><circle class="pin" cx="260.0" cy="72.0" r="11" fill="var(--acc)"></circle><text x="260.0" y="76.5" text-anchor="middle" font-size="11" fill="#fff" font-weight="800">1</text><text class="lbl" x="260.0" y="24.0" text-anchor="middle">Circumstance</text><text class="lbl" x="260.0" y="42.0" text-anchor="middle" font-size="12" fill="var(--mut)" font-weight="400">being · in-emendable</text></a><a href="framework/ferraris.html"><circle class="pin" cx="438.8" cy="201.9" r="11" fill="var(--acc)"></circle><text x="438.8" y="206.4" text-anchor="middle" font-size="11" fill="#fff" font-weight="800">2</text><text class="lbl" x="471.1" y="197.4" text-anchor="start">Register</text><text class="lbl" x="471.1" y="215.4" text-anchor="start" font-size="12" fill="var(--mut)" font-weight="400">inscription · identity · belonging</text></a><a href="framework/romero.html"><circle class="pin" cx="370.5" cy="412.1" r="11" fill="var(--acc)"></circle><text x="370.5" y="416.6" text-anchor="middle" font-size="11" fill="#fff" font-weight="800">3</text><text class="lbl" x="390.5" y="445.6" text-anchor="start">Domains · domination</text><text class="lbl" x="390.5" y="463.6" text-anchor="start" font-size="12" fill="var(--mut)" font-weight="400">who controls the inscription</text></a><a href="book.html#map"><circle class="pin" cx="149.5" cy="412.1" r="11" fill="var(--acc)"></circle><text x="149.5" y="416.6" text-anchor="middle" font-size="11" fill="#fff" font-weight="800">4</text><text class="lbl" x="129.5" y="445.6" text-anchor="end">Constitutional architecture</text><text class="lbl" x="129.5" y="463.6" text-anchor="end" font-size="12" fill="var(--mut)" font-weight="400">the meta-register · CCP</text></a><a href="method.html"><circle class="pin" cx="81.2" cy="201.9" r="11" fill="var(--interp)"></circle><text x="81.2" y="206.4" text-anchor="middle" font-size="11" fill="#fff" font-weight="800">5</text><text class="lbl" x="48.9" y="197.4" text-anchor="end">Consequence</text><text class="lbl" x="48.9" y="215.4" text-anchor="end" font-size="12" fill="var(--mut)" font-weight="400">a human judgement</text></a></g><text x="260" y="254" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-style="italic" font-size="34" fill="var(--ink)" font-weight="500">ser → saber</text><text x="260" y="284" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="var(--mut)" letter-spacing="2">ONE CHAIN · THREE SCALES</text></svg></div>
+    <div>
+      <p class="eyebrow">What each neighbour gains</p>
+      <div class="bridges">
+        <div class="bridge-row"><span class="n">1</span><span><span class="ln">Circumstance</span><b>For the jurist:</b> the circumstance is what no amendment can reach — natality, plurality, mortality — so a constitution is judged by what it does with an in-emendable ground, not by its text alone.</span></div>
+        <div class="bridge-row"><span class="n">2</span><span><span class="ln">Register</span><b>For the data scientist:</b> a register is not a proxy for belonging; it <em class="k">is</em> belonging as a social object. Coding a constitution is coding an inscribed act, which is why every unit carries its span and its coder.</span></div>
+        <div class="bridge-row"><span class="n">3</span><span><span class="ln">Domains · domination</span><b>For the social theorist:</b> domination becomes measurable once it is defined as control of who is inscribed and who controls the inscription — one register per domain, four domains, no fifth.</span></div>
+        <div class="bridge-row"><span class="n">4</span><span><span class="ln">Constitutional architecture</span><b>For the comparativist:</b> the Comparative Constitutions Project turns the meta-register into a corpus with stable ids, so the same reading can be repeated by someone who disagrees with the author.</span></div>
+        <div class="bridge-row"><span class="n">5</span><span><span class="ln">Consequence</span><b>For everyone:</b> the last link is never computed. What ought to follow for plural democracy is written by a person, signed, and marked as such.</span></div>
+      </div>
+      <div class="invite"><a href="framework/index.html">Meet the eight operators →</a></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="traceability"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">Traceability</p><h2>Three kinds of statement, always marked.</h2><p>The reader never has to guess which is which.</p></div>
   <div class="grid g3">
     <div class="card"><span class="state st-datum">Datum</span><h3 style="margin-top:12px;">Amendable knowledge</h3><p>A coded unit with a source span, a coder, a codebook version and an agreement level. It can be wrong, and it says how it could be shown wrong.</p><div class="meta">Constitute · CCP · the coding matrix</div></div>
     <div class="card"><span class="state st-interp">Interpretation</span><h3 style="margin-top:12px;">A human reading, logged</h3><p>What a code means for the chain, written as one sentence and attached to the unit as an event — with its reason and its author.</p><div class="meta">human_interpretation · revision events</div></div>
-    <div class="card"><span class="state st-norm">Normative</span><h3 style="margin-top:12px;">The author’s bet</h3><p>What ought to follow. Never produced by a frequency, a model or a simulation; always signed.</p><div class="meta">frequency_to_normative_claims_forbidden = true</div></div>
+    <div class="card"><span class="state st-norm">Normative</span><h3 style="margin-top:12px;">The author's bet</h3><p>What ought to follow. Never produced by a frequency, a model or a simulation; always signed.</p><div class="meta">frequency_to_normative_claims_forbidden = true</div></div>
   </div>
-  <div class="band" style="margin-top:18px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;">
-    <div><div class="k">Follow a claim to its units</div><div class="v" style="font-size:15px;">Claim C-11.4 → <a class="tid" href="trace/example.html">T-MEX-1917-027-a</a> <span class="tid">T-MEX-1917-027-b</span> <span class="tid">T-MEX-1992-027-a</span></div></div>
-    <div class="quiet" style="margin-left:auto;">Each id opens the unit’s fused record: mapping, revisions, audit trail. <a href="trace/example.html">See a sample →</a></div>
-  </div>
-</div></section>
-
-<section id="sites"><div class="wrap">
-  <div class="sec-head"><p class="eyebrow">One project, three sites</p><h2>Matrix · Project · Platform</h2><p>The same story at three scales. Each site links to the other two from its header.</p></div>
-  <div class="grid g3">
-    <div class="card" style="border-color:var(--acc);"><h3>Matrix <span class="tag">you are here</span></h3><p>What social reality is and how it is read: being / knowledge / register × four domains × the chain. The book and its data live here.</p><div class="meta">ontology360.it</div></div>
-    <a class="card" href="https://computational-ontology.com/" style="display:block;"><h3>Project</h3><p>How the matrix is computed: the apparatus, two diagnostic systems — SOCE and EMERGENZA — and their open research objects.</p><div class="meta">computational-ontology.com</div></a>
-    <a class="card" href="https://constitutionsplus.com/" style="display:block;"><h3>Platform</h3><p>Where the matrix is played: constitutions as complex adaptive systems, with a long-term playable interface.</p><div class="meta">constitutionsplus.com</div></a>
-  </div>
+  <details class="trace"><summary>Follow claim C-11.4 to its units — T-MEX-1917-027-a · -b · T-MEX-1992-027-a</summary><div class="body"><p style="margin:0 0 8px;font-size:14.5px;color:var(--ink2);">In Mexico the economic register of belonging was re-inscribed in 1992 by moving control of the inscription from the community to the individual — a substantive change under the re-inscription rule, not a formal amendment.</p><p class="quiet" style="margin:0;">Each id opens the unit's fused record: mapping, revisions as events, audit trail. Illustrative values until the companion's first release.</p></div></details>
+  <div class="invite"><a href="trace/example.html">Open the sample trace →</a></div>
 </div></section>
 
 <section id="book" style="background:var(--bg2);"><div class="wrap hero-grid" style="align-items:start;">
   <div>
     <p class="eyebrow">The book</p>
-    <h2 style="font-size:clamp(22px,3.2vw,30px);font-weight:750;margin-bottom:12px;">La Constitución en la era digital</h2>
+    <h2 style="font-size:clamp(26px,3.6vw,38px);font-weight:700;margin-bottom:12px;">La Constitución en la era digital</h2>
     <p class="lead" style="margin:0 0 18px;">Manuscript in draft, intended for Herder (<i>Ópera Académica</i>), not yet submitted. A social ontology of belonging: how the digital re-inscribes the four registers, and what remains of plural constitutionalism when the dominant type is the mobilised <i>animal laborans</i>.</p>
-    <div class="chips"><a class="chip" href="book.html">Text <small>draft · for Herder</small></a><a class="chip" href="book.html#map">Web <small>this site</small></a><a class="chip" href="data.html">Repository <small>DOI pending</small></a></div>
+    <div class="chips"><a class="chip" href="book.html">Text <small>draft · for Herder</small></a><a class="chip" href="book.html#map">Web <small>chapter → link → units</small></a><a class="chip" href="data.html">Repository <small>DOI pending</small></a></div>
   </div>
-  <div class="card"><div class="band program" style="box-shadow:none;"><div class="k">Guiding question</div><div class="v">How does each ideology treat the register?</div><div class="d">Who counts · what counts as a valid document · who controls the inscription · cooperation or domination · what is naturalised.</div></div></div>
+  <div class="card"><div class="band" style="box-shadow:none;border-color:var(--acc);"><div class="k">Guiding question</div><div class="v">How does each ideology treat the register?</div><div class="d">Who counts · what counts as a valid document · who controls the inscription · cooperation or domination · what is naturalised.</div></div><div class="invite" style="margin-top:14px;"><a href="book.html#map">See the chapter map →</a></div></div>
+</div></section>
+
+<section id="sites"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">One project, three sites</p><h2>Matrix · Project · Platform</h2><p>The same story at three scales. Each site links to the other two from its header.</p></div>
+  <div class="grid g3">
+    <div class="card" style="border-color:var(--rule);"><h3>Matrix <span class="tag">you are here</span></h3><p>What social reality is and how it is read: being / knowledge / register × four domains × the chain. The book and its data live here.</p><div class="meta">ontology360.it</div></div>
+    <a class="card" href="https://computational-ontology.com/" style="display:block;"><h3>Project</h3><p>How the matrix is computed: the apparatus, two diagnostic systems — SOCE and EMERGENZA — and their open research objects.</p><div class="meta">computational-ontology.com</div></a>
+    <a class="card" href="https://constitutionsplus.com/" style="display:block;"><h3>Platform</h3><p>Where the matrix is executed: constitutions as complex adaptive systems, with a visual evidence layer and a human verdict.</p><div class="meta">constitutionsplus.com</div></a>
+  </div>
+  <div class="invite"><a href="https://computational-ontology.com/">Enter the project →</a></div>
 </div></section>
 
 <footer><div class="wrap row">
   <span>© 2026 Luis Bourguet · <a href="https://orcid.org/0000-0002-4673-4486" target="_blank" rel="noopener">ORCID 0000-0002-4673-4486</a> · Content licensed <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · Hosted on GitHub Pages · <a href="https://github.com/computational-ontology/ontology360" target="_blank" rel="noopener">Source</a></span>
-  <span class="wbtag">White-box practice — no trackers, no dependencies</span>
-</div></footer>
+  <span class="wbtag">White-box practice — no trackers, no third-party code</span>
+</div>
+<div class="wrap" style="margin-top:10px;"><span class="stamp">Updated 3 September 2026 · build be214af · <a href="https://github.com/computational-ontology/ontology360/commits/main" target="_blank" rel="noopener">history</a> · <a href="ontology360-onepage.pdf">one-page PDF</a></span></div></footer>
 </body>
 </html>
